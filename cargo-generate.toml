@@ -1,3 +1,8 @@
+[placeholders.target-name]
+type = "string"
+prompt = "What is the target microcontroller's name (or part number, family etc.)?"
+default = "unknown"
+
 [placeholders.target-arch]
 type = "string"
 prompt = "What is the target architecture?"

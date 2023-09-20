@@ -9,17 +9,17 @@ use rtt_target::{rprintln, rtt_init_print};
 struct Algorithm;
 
 algorithm!(Algorithm, {
-    target_name: "{{target-name}}"
+    target_name: "{{target-name}}",
     flash_address: {{flash-start-address}},
     flash_size: {{flash-size}},
-    ram_start_addr: {{ram-start-address}}
-    ram_end_addr: {{ram-end-address}}
     page_size: {{flash-page-size}},
-    empty_value: 0xFF,
+    empty_value: {{empty-byte-value}},
+    ram_start_addr: {{ram-start-address}},
+    ram_end_addr: {{ram-end-address}},
     sectors: [{
         size: {{flash-sector-size}},
         address: {{flash-start-address}},
-    }]
+    }],
     test_items: [] // Place your self test IDs here
 });
 
